@@ -3,8 +3,6 @@ const emailInput = document.getElementById('email');
 const emailError = document.querySelector('.form__label-error');
 const emailSignedUp = document.querySelector('.success__email');
 const signupForm = document.querySelector('main');
-// const signupForm = document.querySelector('.form');
-// const signupImage = document.querySelector('.form__image-wrapper');
 const successMessage = document.querySelector('.success');
 const dismissBtn = document.querySelector('#dismiss-btn');
 
@@ -27,10 +25,7 @@ function resetForm() {
   emailInput.classList.remove('form__input-error');
   emailSignedUp.textContent = emailInput.value;
   emailInput.value = '';
-  // hide picture & form
-  // signupForm.style.display = 'none';
   signupForm.classList.add('hidden');
-  // signupImage.style.display = 'none';
   successMessage.classList.add('success-show');
 }
 
